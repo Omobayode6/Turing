@@ -11,7 +11,7 @@
   E. None of the above
 4. When is it necessary to use git mv for moving a file? => It simplifies the process of moving/renaming and staging the change in one command.
 5. In Gitflow, the following branch types are part of the standard workflow => **Main/Master branch, Develop branch, Feature branches, Release branches, Hotfix branches**
-6. Which command can be used to configure vimdiff and the default diff tool for git  => **git config --global diff.tool vimdiff**
+6. Which command can be used to configure vimdiff and the default diff tool for git  => **git config --global merge.tool vimdiff**
 7. How can you stash your changes interactively? => **git stash push -p | git stash save -p**
 8. When do you use git rebase instead of git merged? => **Use git rebase when you want a clean, linear history and want to avoid merge commits.**
 9. Which of the following is not a git configuration scope => **User** While Global, Local, and System are valid configuration scope
@@ -43,9 +43,37 @@
 35. git command to get a high-level overview of the project history. => **git log --online**
 36. Where is the metadata of the project stored by Git? => **git directory**
 37. How do you view commit history in Git? => **git log**
-38. What shortcut to stage all the changes you have? => **git commit .**
+38. What shortcut to stage all the changes you have? => **git add .**
 39. What language is used in git? => **C**
 40. command to stage your entire directory and every non-empty directory inside your current directory. => **git add .**
 41. git command to check the created, modified, and deleted files in gitbash before committing. => **git status**
 42. set your user name during a git initial setup. => **git config --global user.name 'Omobayode'**
+43. What contains values for every user on the system? => **gitconfig file**
+44. Which flag enables showing the diff introduced in each commit by the git log command? => **-p**
+45. What command staged all new and updated files? => **git add -A**.
+46. What command renames the current branch? **git branch -m**
+47. What does the command git reset do? **Undoes changes by moving the HEAD to a previous commit**
+48. After you add a file it becomes? => **Staged**
+49. which command creates an empty git repository in the specified repository? **git init**
+50. git reset --hard used to? **uncommitted the changes, unstage the changes, and delete the changes**
+51. Git is Distributed Version Control System
+52. What is the area where uncommitted changes are temporarily held after adding? => **staging area**
+53. which command configures the use of emacs as the default editor? => **git config --global core.editor emacs**
+54. What command is the convenient way of setting configuration options for defining the behavior of the repository and many others? => **git config**
+55. command used to connect the remote repo with the local repo? => **git remote add**
+56. How does git think of its data? => **Snapshot**
+57. Git belongs to what generation of Version Control system? => **3rd**
+58. git command to check stored stashes? => **git stash list**
+59. which option of remote command, add a new remote git repository as a short name to reference easily? => **add**
+60. which version onward did git offer, reverting a file back to what it looked like when last committed? => **1.6**
+61. command not valid with git stash command. => **git stash list push**
+62. what represents the last commit in the current checkout branch in git? => **Head**
+63. Which command lists only the last two diff introduced in each commit? => **git log -p -2**
+64. What is the default text editor for the Bash shell with a Windows-based git install? => **VIM**
+65. Which of the following is not a DVCS(Distributed Version Controlled Syaytem)?  => **rcs**
+66. What command gets the list of commits made in the last two weeks? => **git log --since-weeks=2**
+67. Command to create git branch? => **git branch**
+68. Command used to show a limited number of commits? => **git log -n**
+69. Git command to compare two specified branches? => **git diff ...**
+70. What is a commit hash in git? **A unique identifier for a commit**
 
