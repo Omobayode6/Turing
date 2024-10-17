@@ -84,5 +84,8 @@
 76. A reference to the remote repository from where a project is initially cloned is called? => **Origin**
 77. Who is attributed with inventing git? => **Linus Torvalds**
 78. Which option in the output of the log command, shows the list of file modified after the commit information.
-79. 
+
+
+## HTML and CSS
+1. How do you add comments in HTML? => **<!-comment->**
 
