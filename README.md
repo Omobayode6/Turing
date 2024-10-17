@@ -9,7 +9,7 @@
   C. Tags cannot be pushed to a remote
   D. Tags cannot be moved and can be cryptographically signed => **True**
   E. None of the above
-4. When is it necessary to use git mv for moving a file? => It simplifies the process of moving/renaming and staging the change in one command.
+4. When is it necessary to use **git mv** for moving a file? => It simplifies the process of moving/renaming and staging the change in one command.
 5. In Gitflow, the following branch types are part of the standard workflow => **Main/Master branch, Develop branch, Feature branches, Release branches, Hotfix branches**
 6. Which command can be used to configure vimdiff and the default diff tool for git  => **git config --global merge.tool vimdiff**
 7. How can you stash your changes interactively? => **git stash push -p | git stash save -p**
@@ -71,9 +71,18 @@
 63. Which command lists only the last two diff introduced in each commit? => **git log -p -2**
 64. What is the default text editor for the Bash shell with a Windows-based git install? => **VIM**
 65. Which of the following is not a DVCS(Distributed Version Controlled Syaytem)?  => **rcs**
-66. What command gets the list of commits made in the last two weeks? => **git log --since-weeks=2**
+66. What command gets the list of commits made in the last two weeks? => **git log --since=2.weeks**
 67. Command to create git branch? => **git branch**
 68. Command used to show a limited number of commits? => **git log -n**
 69. Git command to compare two specified branches? => **git diff ...**
 70. What is a commit hash in git? **A unique identifier for a commit**
+71. What is the version of the repository that diverges from the main working project? => **Branch**
+72. Arranging customer names in ascending order is an example of? => **Information Processing**
+73. git commit -m <?> is for? => **Comment**
+74. git command to show all parameters in git? => **git config --list**
+75. git is a ------ Version Control Tool. => **Decentralized**
+76. A reference to the remote repository from where a project is initially cloned is called? => **Origin**
+77. Who is attributed with inventing git? => **Linus Torvalds**
+78. Which option in the output of the log command, shows the list of file modified after the commit information.
+79. 
 
