@@ -196,3 +196,32 @@ class EnhancedComponent extends BaseComponent { /.../ }? => **Inheritance can le
 73. What is React Router used for in a React application? => **Routing between different components based on URL**
 74. Which component in React Router is used to configure a route? => **<Route/>**
 75. What does the component do in React Router? => **It provides conditional logic for rendering components**
+76. How do you navigate to a different URL using React Router? => **Using the component**
+77. How do you define a route parameter in React Router? => **<Route path = "/:id" />**
+78. How can you programmatically navigate to a new route in React Router? => **Using this.props.history.push('/new-route')**
+79. What is the use of the exact prop in a component? => **To ensure that the route only matches the exact path without any sub-routes**
+80. What is the purpose of the useState hook in React? => **To manage local state in a functional component**
+81. When is the useEffect hook run in a React component? => **After every render of the component, including the first render**
+82. What does the useEffect hook replace in class components? => **componentDidMount, componentDidUpdate, and componentWillUnmount methods**
+83. What is the correct way to conditionally run an effect with the useEffect hook? **By setting a specific condition in the dependency array**
+84. What does the useCallback hook do? => **Memoizes a callback function to prevent unnecessary re-renders**
+85. How do custom hooks enhance the functionality of React components? => **By allowing state and lifecycle features to be reused across multiple components**
+86. How do you initialize state with the useState hook? => **useState(initialState)**
+87. What is the correct way to update state based on the previous state using useState? => **setState(prevState => prevState + 1)**
+88. How can you implement a fetch request with useEffect that updates the state when the data is retrieved? => **By creating a separate async function outside of useEffect and calling it inside useEffect**
+89. Identify the issue in this useState usage:
+const [count, setCount] = useState(0); setCount(count + 1); => **The state update should be inside a component or effect**
+90. What could cause an infinite loop in a component using useEffect? => **Omitting the dependency array | Including a state variable that constantly changes within the dependency array**
+91. How do you prevent a memory leak in a component that subscribes to an external data source using useEffect? => **By unsubscribing from the data source in the return function of useEffect**
+92. What is the primary use of the Context API in React? => **To manage global state across the entire application**
+93. How does the Context API help in avoiding "prop drilling"? => **By allowing components to subscribe to context changes directly**
+94. What is a potential drawback of using the Context API excessively? => **Difficulty in managing and tracking state changes**
+95. How do you consume a context value in a functional component? => **Using the useContext hook**
+96. How can you dynamically change the value of a context in a component tree? => **By updating the state that's passed to the context provider's value prop**
+97. What might be the issue if a component is not receiving the expected context value? => **The component is not wrapped with the Context.Provider | The context value is not updated correctly**
+98. How do you address a performance issue caused by unnecessary re-renders in components consuming a frequently updated context? => **Splitting the context into multiple smaller contexts**
+99. What is a Higher-Order Component (HOC) in React? => **A function that takes a component and returns a new component**
+100. Why are Higher-Order Components useful in React? => **They make components more reusable**
+101. What is a key consideration when using Higher-Order Components? => **They should not alter the component's signature**
+102. How do you apply a Higher-Order Component to a React component? => **HOC(Component)**
+103. What is the correct way to pass additional arguments to a Higher-Order Component in React? => **HOC(additionalArg)(Component)**
