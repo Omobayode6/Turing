@@ -143,3 +143,44 @@ componentDidMount() { this.setState({value: this.props.initialValue}); } => **Pr
 33. Which of the following is true about event handling in React? => **React events are named using camelCase**
 34. What is a SyntheticEvent in React? => **A custom event system for handling native events**
 35. How do you pass an argument to an event handler in React? => **By using an arrow function in the onClick attribute** | **By using the bind method**
+36. What is wrong with this event handler definition?
+handleClick() { console.log(this.state.value); } => **'this' is not bound to the component**
+37. Which operator is commonly used for inline conditional rendering in React? => **&& (Logical AND)**
+38. What is the purpose of using the ternary operator in React? => **To render one of two components based on a condition**
+39. How can you prevent a component from rendering in React? => **Return null in the render method**
+40. What will the following code render?
+{isLoggedIn && } => **if isLoggedIn is true**
+41. How does the following code render different components?
+{isLoggedIn ? : } => **Renders if isLoggedIn is true, otherwise**
+42. Identify the issue in this conditional rendering code:
+{isLoggedIn ? } => **Missing the false condition**
+43. What's wrong with this code snippet for conditional rendering?
+{isLoggedIn && || } => **It combines two different conditional rendering patterns incorrectly**
+44. What is the purpose of keys in React lists? => **To uniquely identify list items**
+45. What type of value should be used for keys in React? => **Any unique identifier**
+46. In React, when is it necessary to use keys? => **When rendering a list of items**
+47. What can happen if you don't provide unique keys for items in a list in React? => **Performance issues and bugs in the UI update logic**
+48. What is the correct way to assign a key inside a map() function in React? => **Use a unique property of each item**
+49. What's wrong with using indexes as keys in React for the following code? => **It can cause rendering issues if the list changes**
+50. What is a controlled component in React? => **A component whose state is controlled by React**
+51. In React, how do you handle form submission? => **Using an onSubmit event handler in the form element**
+52. How do you collect form input values in React? => **By storing the values in the state on every change**
+53. What is the main difference between controlled and uncontrolled components in React? => **Controlled components manage their own state, while uncontrolled components store their state in the DOM**
+54. How would you create a basic text input field in a React component? => **<input type='text' value={this.state.value}/>**
+55. What is the correct way to handle a form input change in React? => **onChange={(event) => this.setState({value: event.target.value})}**
+56. What does "lifting state up" mean in React? => **Moving state to a parent component for shared access**
+57. Why is lifting state up beneficial in React applications? => **It enables multiple components to share and synchronize state changes**
+58. In the context of lifting state up, what is a common pattern for two-way data binding between parent and child components? => **Using a callback function passed from parent to child**
+59. What is a potential downside of lifting state up in a large React application? => **Difficulty in managing state across distant components**
+60. How do you lift state up from a child component to a parent component? => **By passing a state setter function from parent to child**
+61. What is the correct way to update the parent's state from a child component? => **Use a callback function provided by the parent**
+62. Identify the problem in this code:
+class Parent extends React.Component { updateState() { /.../ } render() { return ; } } => **updateState should be bound to this in the constructor**
+63. What's the issue with this lifted state approach?
+class Parent extends React.Component {
+constructor(props) {
+super(props);
+this.state = { value: '' };
+} render() {
+return <Child value={this.state.value} onChange={value => this.setState({value})} />; } } => **onChange handler in Child is not implemented correctly**
+64. In React, what is favored for reusing component logic? => **Composition**
