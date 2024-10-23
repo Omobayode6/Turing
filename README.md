@@ -109,5 +109,37 @@
 16. What is the primary purpose of props in React? => **To pass data and event handlers to child components**
 17. Consider this code snippet:<div> <Mycompoenent/> </div> What does MyComponent represent here? => **A child component**
 18. Which of the following is true about React components?=> **They can only return one root element**
+19. What does the setState() function do in a class component? => **Updates the component’s state and re-renders the component**
+20. Which lifecycle method is called right before a component is unmounted from the DOM? => **componentWillUnmount()**
+21. What is the correct order of lifecycle phases in a React class component? => **Mounting -> Updating -> Unmounting**
+22. In which lifecycle method should you make API calls in a class component? => **componentDidMount()**
+23. What is the primary use of the componentDidUpdate method in a class component? => **To update the component in response to prop or state changes**
+24. How does React determine whether to re-render a component in response to state changes? => **It uses the shouldComponentUpdate lifecycle method**
+25. Consider this code:
+componentDidMount() { this.setState({data: 'new data'}); }.
+When is the new data available for render? => **After the component re-renders**
+26. What is a potential issue with this setState usage?
+this.setState({value: this.state.value + 1}); => **It may lead to outdated values due to the asynchronous nature of setState**
+27. Identify the issue in this code:
+class MyComponent extends React.Component {
+render() {
+return
 
- 
+{this.state.count}
+; } } => **State is not initialized in the constructor**
+28. Identify the issue in this code:
+class MyComponent extends React.Component {
+render() {
+return
+
+{this.state.count}
+; } } => **State is not initialized in the constructor**
+29. What is wrong with this lifecycle method usage?
+componentDidMount() { this.setState({value: this.props.initialValue}); } => **Props should not be used to set state**
+
+30. In React, how do you attach an event handler to an element? => **Using the onEvent attribute**
+31. What is the correct way to bind a method to a component instance in a React class component? => **this.method = this.method.bind(this) in the constructor**
+32. Why is it generally a good idea to bind event handler methods in a class component's constructor? => **To allow access to the 'this' keyword**
+33. Which of the following is true about event handling in React? => **React events are named using camelCase**
+34. What is a SyntheticEvent in React? => **A custom event system for handling native events**
+35. How do you pass an argument to an event handler in React? => **By using an arrow function in the onClick attribute** | **By using the bind method**
