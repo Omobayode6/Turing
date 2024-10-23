@@ -184,3 +184,15 @@ this.state = { value: '' };
 } render() {
 return <Child value={this.state.value} onChange={value => this.setState({value})} />; } } => **onChange handler in Child is not implemented correctly**
 64. In React, what is favored for reusing component logic? => **Composition**
+65. What is a key advantage of composition over inheritance in React? => **Composition provides a clearer component hierarchy**
+66. How does React achieve code reuse with composition? => **By rendering props children**
+67. What is an example of composition in React? => **Passing components as props to other components**
+68. Why might you choose composition over inheritance when designing React components? => **Composition allows for easier code refactoring and maintenance**
+69. Which React code snippet demonstrates composition? => **<Parent> <Child/> </Parent>**
+70. How can you use composition to pass content into a component in React? => **By passing content as a child between component tags**
+71. What is a higher-order component (HOC) in React, and how does it relate to composition? => **A function that takes a component and returns a new component**
+72. What's wrong with using inheritance to extend a React component like this:
+class EnhancedComponent extends BaseComponent { /.../ }? => **Inheritance can lead to a more complex and less predictable component structure**
+73. What is React Router used for in a React application? => **Routing between different components based on URL**
+74. Which component in React Router is used to configure a route? => **<Route/>**
+75. What does the component do in React Router? => **It provides conditional logic for rendering components**
