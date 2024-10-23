@@ -89,3 +89,25 @@
 ## HTML and CSS
 1. How do you add comments in HTML? => **<!-comment->**
 
+
+## React
+1. What is React primarily used for? => **Building user interfaces**
+2. Which feature of React allows it to efficiently update the UI? => **Virtual DOM**
+3. JSX stands for... => **JavaScript XML**
+4. In JSX, how do you express JavaScript variables? => **Inside curly braces**
+5. Which of the following is the correct way to comment in JSX? => **{/*Comment here*/}**
+6. What is the correct syntax for embedding a JavaScript expression in JSX? => **{expression}**
+7. JSX is processed into... => **JavaScript Objects**
+8. JSX elements must be wrapped in an enclosing tag. What is this concept known as? => **Encapsulation**
+9. What does the following JSX code render?{'Hello' + 'World'} => **HelloWorld**
+10. Identify the error in the following JSX: <div>Hello World</div><div>welcome</div> => **Missing enclosing tag** Both of them must be wrapped in an enclosing parent tag
+11. What are Props in React? => **Data passed from a parent component to a child component**
+12. A functional component in React is... => **A function that returns a React element**
+13. Which of the following is the correct way to define a component's initial state in a class component? => **Inside the constructor() method**
+14. In React, what is the role of a key prop in a list of elements? => **It helps React identify which items have changed**
+15. How are state and props different in React? => **State is internal and controlled by the component itself, while props are external and controlled by whatever renders the component**
+16. What is the primary purpose of props in React? => **To pass data and event handlers to child components**
+17. Consider this code snippet:<div> <Mycompoenent/> </div> What does MyComponent represent here? => **A child component**
+18. Which of the following is true about React components?=> **They can only return one root element**
+
+ 
