@@ -86,8 +86,12 @@
 78. Which option in the output of the log command, shows the list of file modified after the commit information.
 
 
+
+
 ## HTML and CSS
 1. How do you add comments in HTML? => **<!-comment->**
+
+
 
 
 ## React
@@ -225,3 +229,33 @@ const [count, setCount] = useState(0); setCount(count + 1); => **The state updat
 101. What is a key consideration when using Higher-Order Components? => **They should not alter the component's signature**
 102. How do you apply a Higher-Order Component to a React component? => **HOC(Component)**
 103. What is the correct way to pass additional arguments to a Higher-Order Component in React? => **HOC(additionalArg)(Component)**
+104. What could cause a React component wrapped in an HOC not to update as expected? => **The HOC does not pass down props to the wrapped component**
+105. How do you avoid namespace clashes in props when using multiple Higher-Order Components? => **By using unique prop names across all HOCs**
+106. What is the main purpose of custom hooks in React? => **To reuse stateful logic between different components**
+107. What are the benefits of using advanced hooks like useReducer and useContext together? => **They allow for global state management without third-party libraries | They simplify the process of prop drilling**
+108. What should you consider when creating a custom hook? => **Its impact on the component's lifecycle | The types of components it will be used in | How it manages state and side effects**
+109. How do you create a custom hook in React? => **By creating a function that starts with use and uses other hooks**
+110. How can you optimize performance in a component that uses many custom hooks? => **By using the useCallback and useMemo hooks | By minimizing the number of state updates**
+111. What is a common mistake to avoid when using custom hooks? => **Using them inside conditional statements | Defining them inside components | Calling them outside of functional components**
+112. How do you troubleshoot a memory leak in a component caused by a custom hook? => **By ensuring cleanup functions are defined in effects**
+113. What is the purpose of using React.memo in a functional component? => **To prevent a component from re-rendering unless its props have changed**
+114. How does the useCallback hook contribute to performance optimization in React components? => **By caching functions to prevent unnecessary re-creations**
+115. What is the main benefit of code splitting in React? => **To reduce the initial loading time of the application**
+116. How can you implement lazy loading of components in React? => **Using React.lazy and Suspense**
+117. In what scenario is using shouldComponentUpdate or React.memo not effective for preventing unnecessary re-renders? => **When the component always receives new object references as props**
+118. How do you identify and address unnecessary re-renders in a React application? => **Using the React DevTools Profiler | Using console logs in the render method | Reviewing the code for inefficient patterns**
+119. What can cause a memory leak in a React component, and how do you fix it? => **Not cleaning up event listeners or subscriptions in useEffect**
+120. What is the primary benefit of using TypeScript with React? => **Static type checking and easier error detection**
+121. How does TypeScript enhance the development of large-scale React applications? => **By offering enhanced readability and maintainability through type annotations and interfaces**
+122. In TypeScript, how can you define the types of props in a React functional component? => **Using type assertions | Using generic types**
+123. How do you define state in a TypeScript class component? => **state: StateType = initialState; inside the class | this.state = { ... } inside the constructor**
+124. How do you type a React component with generic props in TypeScript? => **By using the React.ComponentType with generics | By using the React.FC type with a generic parameter**
+125. What is a common issue when using TypeScript with React and how can it be resolved? => **Type errors due to incorrect prop types, resolved by ensuring prop types match the expected interface or type**
+126. How can you troubleshoot TypeScript errors related to the context API in a React application? => **By ensuring the context value matches the type defined in the Context creation**
+127. What is the main purpose of using Jest in React applications? => **For unit and integration testing**
+128. How does React Testing Library differ from enzyme in testing React components? => **React Testing Library focuses on rendering components and user interactions, while enzyme focuses on internal component state and methods**
+129. What is a best practice when writing tests for React components using React Testing Library? => **To focus on testing the component as users would interact with it**
+130. How do you mock a module or function in Jest? => **Using jest.fn() to create a mock function | Using jest.mock() to mock an entire module**
+131. How do you test a component that fetches data from an API using React Testing Library? => **By mocking the fetch function and simulating a response**
+132. What common issue should you be aware of when testing asynchronous behavior in React components? => **Tests completing before asynchronous operations**
+133. How do you identify and resolve issues related to event handling in tests using React Testing Library? => **By ensuring the correct event types and payloads are used | By manually triggering events in the component**
